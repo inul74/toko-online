@@ -1,4 +1,5 @@
 import localFont from "next/font/local";
+import { Toaster } from "react-hot-toast";
 import { NextUIProvider } from "@nextui-org/react";
 
 import "./globals.css";
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Toaster />
         <NextUIProvider>{children}</NextUIProvider>
       </body>
     </html>
