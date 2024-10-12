@@ -78,7 +78,7 @@ export default function Sidebar() {
           return <Tab item={item} key={key} />;
         })}
       </ul>
-      <div className="flex justify-center text-red-600 font-semibold">
+      <div className="flex items-center justify-start text-red-600 font-semibold">
         <button
           onClick={async () => {
             try {
@@ -91,7 +91,7 @@ export default function Sidebar() {
               toast.error(error?.message);
             }
           }}
-          className="flex gap-2 px-5 py-2 mb-4 border border-gray-200 hover:bg-indigo-100 rounded-xl w-full ease-soft-spring duration-400 transition-all"
+          className="flex gap-2 px-5 py-2 mb-4 border border-gray-200 hover:bg-indigo-100 rounded-xl w-full ease-soft-spring duration-400 transition-all items-center"
         >
           <LogOut className="h-5 w-5" /> Logout
         </button>
