@@ -10,7 +10,7 @@ export default function Header({ toggleSidebar }) {
           <Menu />
         </button>
       </div>
-      <h1 className="text-xl font-semibold">Admin Page</h1>
+      <h1 className="text-xl font-semibold">Admin Toko Online</h1>
     </section>
   );
 }
